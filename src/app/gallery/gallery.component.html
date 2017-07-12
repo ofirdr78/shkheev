@@ -1,0 +1,17 @@
+  <div *ngFor="let photo of photoList; let i of index;" >
+    <img *ngIf="photoList[currentIndex] === photo" [src]="photo.path" class="LargePhoto" draggable="false">
+  </div>
+
+
+
+
+
+
+  <!--<div *ngFor="let photo of photoList" class="circle-wrapper">
+    <img  class="circle" [ngClass]="{'selectedcircle': photoList[currentIndex] === photo}"  draggable="false" (click)="photoClicked(photo)">
+  </div>-->
+
+  <!--<div class="openingText">
+  .איפור טוב הוא כמו שירה. כמו ציור על קנבס חי ונושם. אומנות שיכולה להרקיע שחקים, לגרום לך לנסוק כציפור לשמיים..." <br>
+  &nbsp; &nbsp; &nbsp; &nbsp; "...לראות מלמעלה את העולם ורוד יותר, לגרום לך לחייך חיוך רחב ולהיות גאה בעצמך, ולו לרגע קט  <br>
+  </div>-->
